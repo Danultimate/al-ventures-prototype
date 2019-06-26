@@ -4,6 +4,7 @@
 
 @section('extra-css')
     <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.css"/>
 @endsection
 
 @section('content')
@@ -56,13 +57,14 @@
         <div class="product-section-information">
             <h1 class="product-section-title">{{ $product->name }}</h1>
             <div class="product-section-subtitle">{{ $product->details }}</div>
-            <div>{!! $stockLevel !!}</div>
             <div class="product-section-price">{{ $product->presentPrice() }}</div>
 
             <p>
                 {!! $product->description !!}
             </p>
-
+             <p>
+                    
+             </p>
             <p>&nbsp;</p>
 
             @if ($product->quantity > 0)
@@ -107,3 +109,5 @@
     <script src="{{ asset('js/algolia.js') }}"></script>
 
 @endsection
+
+

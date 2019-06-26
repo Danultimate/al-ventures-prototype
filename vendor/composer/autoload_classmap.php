@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddDummyEvent' => $baseDir . '/database/seeds/AddDummyEvent.php',
     'AlgoliaSearch\\AlgoliaConnectionException' => $vendorDir . '/algolia/algoliasearch-client-php/src/AlgoliaSearch/AlgoliaConnectionException.php',
     'AlgoliaSearch\\AlgoliaException' => $vendorDir . '/algolia/algoliasearch-client-php/src/AlgoliaSearch/AlgoliaException.php',
     'AlgoliaSearch\\Analytics' => $vendorDir . '/algolia/algoliasearch-client-php/src/AlgoliaSearch/Analytics.php',
@@ -29,6 +30,7 @@ return array(
     'App\\Console\\Commands\\EcommerceInstall' => $baseDir . '/app/Console/Commands/EcommerceInstall.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Coupon' => $baseDir . '/app/Coupon.php',
+    'App\\Event' => $baseDir . '/app/Event.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
@@ -39,6 +41,7 @@ return array(
     'App\\Http\\Controllers\\ConfirmationController' => $baseDir . '/app/Http/Controllers/ConfirmationController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\CouponsController' => $baseDir . '/app/Http/Controllers/CouponsController.php',
+    'App\\Http\\Controllers\\EventController' => $baseDir . '/app/Http/Controllers/EventController.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\LandingPageController' => $baseDir . '/app/Http/Controllers/LandingPageController.php',
     'App\\Http\\Controllers\\OrdersController' => $baseDir . '/app/Http/Controllers/OrdersController.php',
@@ -2855,6 +2858,13 @@ return array(
     'League\\Flysystem\\Util\\ContentListingFormatter' => $vendorDir . '/league/flysystem/src/Util/ContentListingFormatter.php',
     'League\\Flysystem\\Util\\MimeType' => $vendorDir . '/league/flysystem/src/Util/MimeType.php',
     'League\\Flysystem\\Util\\StreamHasher' => $vendorDir . '/league/flysystem/src/Util/StreamHasher.php',
+    'MaddHatter\\LaravelFullcalendar\\Calendar' => $vendorDir . '/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/Calendar.php',
+    'MaddHatter\\LaravelFullcalendar\\Event' => $vendorDir . '/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/Event.php',
+    'MaddHatter\\LaravelFullcalendar\\EventCollection' => $vendorDir . '/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/EventCollection.php',
+    'MaddHatter\\LaravelFullcalendar\\Facades\\Calendar' => $vendorDir . '/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/Facades/Calendar.php',
+    'MaddHatter\\LaravelFullcalendar\\IdentifiableEvent' => $vendorDir . '/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/IdentifiableEvent.php',
+    'MaddHatter\\LaravelFullcalendar\\ServiceProvider' => $vendorDir . '/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/ServiceProvider.php',
+    'MaddHatter\\LaravelFullcalendar\\SimpleEvent' => $vendorDir . '/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/SimpleEvent.php',
     'MenuItemsTableSeeder' => $baseDir . '/database/seeds/MenuItemsTableSeeder.php',
     'MenuItemsTableSeederCustom' => $baseDir . '/database/seeds/MenuItemsTableSeederCustom.php',
     'MenusTableSeeder' => $baseDir . '/database/seeds/MenusTableSeeder.php',
