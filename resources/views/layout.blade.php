@@ -20,8 +20,8 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-        <link href="/{{ URL::asset('css/default.css') }}" rel="stylesheet">
-        <link href="/{{ URL::asset('css/default.date.css') }}" rel="stylesheet">
+        <link href="/{{ asset('css/default.css') }}" rel="stylesheet">
+        <link href="/{{ asset('css/default.date.css') }}" rel="stylesheet">
 
         <!-- Calendar -->
         
@@ -57,6 +57,6 @@
         })
         var picker = $input.pickadate('picker')
     });
-  </script>
+  </script> 
 </body>
 </html>
