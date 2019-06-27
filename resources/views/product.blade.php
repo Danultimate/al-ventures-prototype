@@ -61,7 +61,9 @@
 
             <p>
                 {!! $product->description !!}
+                {!! Form::open(array('url' => $type, 'class' => 'form')) !!}
                 {!! Form::text('date', '', array('id' => 'datepicker')) !!}
+                {!! Form::close() !!}
                 
             </p>
             <p>&nbsp;</p>
