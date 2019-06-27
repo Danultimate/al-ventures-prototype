@@ -20,8 +20,8 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-        <link href="/{{ asset('css/default.css') }}" rel="stylesheet">
-        <link href="/{{ asset('css/default.date.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/default.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/default.date.css') }}" rel="stylesheet">
 
         <!-- Calendar -->
         
@@ -38,10 +38,10 @@
     @include('partials.footer')
 
     @yield('extra-js')
-    <script src="/{{ URL::asset('js/jquery.1.7.0.js') }}"></script>
-<script src="/{{ URL::asset('js/legacy.js') }}"></script>
-<script src="/{{ URL::asset('js/picker.date.js') }}"></script>
-<script src="/{{ URL::asset('js/picker.js') }}"></script>
+    <script src="{{ asset('js/jquery.1.7.0.js') }}"></script>
+<script src="{{ asset('js/legacy.js') }}"></script>
+<script src="{{ asset('js/picker.date.js') }}"></script>
+<script src="{{ asset('js/picker.js') }}"></script>
 
 
 <script>
