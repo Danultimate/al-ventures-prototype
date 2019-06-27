@@ -114,6 +114,7 @@
         $('.date').datepicker({
     format: 'mm/dd/yy'
     });
+});
 </script>
 
 
