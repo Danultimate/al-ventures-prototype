@@ -61,7 +61,7 @@
 
             <p>
                 {!! $product->description !!}
-
+                <p>Date</p>
                 <input class="form-control date" name="entry_date" type="text">
             </p>
             <p>&nbsp;</p>
