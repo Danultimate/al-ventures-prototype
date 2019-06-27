@@ -73,16 +73,6 @@
             @endif
         </div>
     </div> <!-- end product-section -->
-    <div class="container">
-    <div class="row">
-        <div class="col-md-4 col-md-offset-8">
-             <div class="form-group">
-                  <label for="exampleInputPassword1">Date Picker </label>
-                  <input type="text" class="form-control datepicker" id="date_order" name="date_order">
-                </div>
-        </div>
-    </div>
-</div>
 
     @include('partials.might-like')
 

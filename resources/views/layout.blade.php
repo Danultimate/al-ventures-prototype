@@ -15,13 +15,12 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css">
+
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-        <link href="{{ asset('css/default.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/default.date.css') }}" rel="stylesheet">
+
 
         <!-- Calendar -->
         
@@ -38,25 +37,6 @@
     @include('partials.footer')
 
     @yield('extra-js')
-    <script src="{{ asset('js/jquery.1.7.0.js') }}"></script>
-<script src="{{ asset('js/legacy.js') }}"></script>
-<script src="{{ asset('js/picker.date.js') }}"></script>
-<script src="{{ asset('js/picker.js') }}"></script>
 
-
-<script>
-     $( document ).ready(function() {
-    var $input = $( '.datepicker' ).pickadate({
-            formatSubmit: 'yyyy-mm-dd',
-             hiddenName: true,
-            // min: [2015, 7, 14],
-            container: '#container',
-            // editable: true,
-            closeOnSelect: true,
-            closeOnClear: false,
-        })
-        var picker = $input.pickadate('picker')
-    });
-  </script> 
 </body>
 </html>
