@@ -61,12 +61,8 @@
 
             <p>
                 {!! $product->description !!}
+                <input class="date form-control" type="text">
             </p>
-            <div class="container">
-
-              <input class="date form-control" type="text">
-
-            </div>
             <p>&nbsp;</p>
 
             @if ($product->quantity > 0)
