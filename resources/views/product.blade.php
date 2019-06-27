@@ -62,7 +62,7 @@
             <p>
                 {!! $product->description !!}
 
-                
+                <input class="form-control date" name="entry_date" type="text">
             </p>
             <p>&nbsp;</p>
             
@@ -106,6 +106,14 @@
     <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
     <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
     <script src="{{ asset('js/algolia.js') }}"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $( function() {
+        $('.date').datepicker();        
+    });
+</script>
 
 
 @endsection
