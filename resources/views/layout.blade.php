@@ -20,6 +20,8 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+        <link href="/{{ URL::asset('css/default.css') }}" rel="stylesheet">
+        <link href="/{{ URL::asset('css/default.date.css') }}" rel="stylesheet">
 
         <!-- Calendar -->
         
@@ -36,6 +38,25 @@
     @include('partials.footer')
 
     @yield('extra-js')
+    <script src="/{{ URL::asset('js/jquery.1.7.0.js') }}"></script>
+<script src="/{{ URL::asset('js/legacy.js') }}"></script>
+<script src="/{{ URL::asset('js/picker.date.js') }}"></script>
+<script src="/{{ URL::asset('js/picker.js') }}"></script>
 
+
+<script>
+     $( document ).ready(function() {
+    var $input = $( '.datepicker' ).pickadate({
+            formatSubmit: 'yyyy-mm-dd',
+             hiddenName: true,
+            // min: [2015, 7, 14],
+            container: '#container',
+            // editable: true,
+            closeOnSelect: true,
+            closeOnClear: false,
+        })
+        var picker = $input.pickadate('picker')
+    });
+  </script>
 </body>
 </html>
