@@ -61,7 +61,7 @@
 
             <p>
                 {!! $product->description !!}
-                <input class="date form-control" type="text">
+                <input class="datepicker form-control" type="text">
             </p>
             <p>&nbsp;</p>
 
@@ -110,7 +110,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('.date').datepicker();
+            $('.datepicker').datepicker();
         });
     </script>
 
