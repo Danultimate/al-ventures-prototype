@@ -61,7 +61,7 @@
 
             <p>
                 {!! $product->description !!}
-                {!! Form::text('date', '', array('id' => 'datepicker') !!}
+                {!! Form::text('date', '', array('id' => 'datepicker')) !!}
                 
             </p>
             <p>&nbsp;</p>
