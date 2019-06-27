@@ -110,20 +110,13 @@
 
 @section('extra1-js')
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
-
-<script type="text/javascript">
-
-    $('.date').datepicker({  
-
-       format: 'mm-dd-yyyy'
-
-     });  
-
-</script> 
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.date').datepicker();
+        });
+    </script>
 
 @endsection
 
