@@ -61,10 +61,10 @@
 
             <p>
                 {!! $product->description !!}
-                <input class="datepicker form-control" type="text">
+                
             </p>
             <p>&nbsp;</p>
-
+            <input type="text" class="form-control datepicker">
             @if ($product->quantity > 0)
                 <form action="{{ route('cart.store', $product) }}" method="POST">
                     {{ csrf_field() }}
